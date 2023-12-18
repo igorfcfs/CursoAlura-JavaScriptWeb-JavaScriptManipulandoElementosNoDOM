@@ -1,0 +1,22 @@
+template string -> `${template_string}` // usado entre crases
+
+o innerHTML e bom para trabalhar com textos e listas.
+
+titulo.innerHTML = `Otimize sua produtividade,<br>
+            <strong class="app__title-strong">mergulhe no que importa.</strong>`;
+
+titulo.innerHTML += `Otimize sua produtividade,<br>
+            <strong class="app__title-strong">mergulhe no que importa.</strong>`;
+
+quando colocamos o operador + no innerHTML quando clicamos no elemento referenciado ele sempre adiciona mais um elemento passado como valor.
+
+
+Comando Switch:
+
+switch(<var>){
+	case <val>:
+		<content>;
+		break;
+        default:
+            break;
+}
