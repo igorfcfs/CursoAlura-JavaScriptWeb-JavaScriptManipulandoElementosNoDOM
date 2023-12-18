@@ -1,0 +1,64 @@
+Trabalhando com Classes:
+
+Adicionar classes:
+const element = document.getElementById('meuElemento');
+element.classList.add('minhaClasse');
+
+Remover classes:
+const element = document.getElementById('meuElemento');
+element.classList.remove('minhaClasse');
+
+Alternar uma classe:
+const element = document.getElementById('meuElemento');
+element.classList.toggle('minhaClasse');
+
+Verificar se uma classe esta presente:
+const element = document.getElementById('meuElemento');
+if (element.classList.contains('minhaClasse')) {
+  // A classe 'minhaClasse' está presente no elemento
+  // Faça algo aqui...
+}
+
+Substituir classes:
+const element = document.getElementById('meuElemento');
+element.classList.remove('classeAntiga');
+element.classList.add('classeNova');
+
+
+Manipular classes simultaneamente:
+const element = document.getElementById('meuElemento');
+element.classList.add('classe1', 'classe2', 'classe3');
+element.classList.remove('classe2', 'classe3');
+
+
+
+
+Inserir objeto de audio
+
+const musica = new Audio('/sons/luna-rise-part-one.mp3');
+
+musicaFocoInput.addEventListener('change', () => {
+    if(musica.paused){
+        musica.play;
+    } else {
+        musica.pause();
+    }
+});
+
+Controles basicos do audio:
+
+-play(): inicia a reprodução do áudio;
+
+-pause(): pausa a reprodução do áudio;
+
+-currentTime: propriedade que retorna ou define a posição atual de reprodução do áudio, em segundos;
+
+-volume: propriedade que retorna ou define o nível de volume do áudio, variando de 0 a 1.
+
+Exemplo:
+const audioElement = new Audio('caminho/do/arquivo-de-audio.mp3');
+
+audioElement.play(); // Inicia a reprodução
+audioElement.pause(); // Pausa a reprodução
+audioElement.currentTime = 10; // Move para 10 segundos no áudio
+audioElement.volume = 0.5; // Define o volume para metade (50%)
