@@ -1,0 +1,27 @@
+Iniciar o temporizador: setInterval();
+Finalizar o temporizador: clearInterval();
+
+let intervalorId = null;
+
+const contagemRegressiva = () => {
+    if(tempoDecorridoEmSegundos <= 0){
+        zerar();
+        return;
+    }
+    tempoDecorridoEmSegundos -= 1;
+};
+
+<botaoDeStartEPause>.addEventListener('click', iniciarOuPausar);
+
+function iniciarOuPausar() {
+    if(intervaloId){
+        zerar();
+        return;
+    }
+    intervaloId = setInterval(contagemRegressiva, <tempo_a_ser_decrementado_em_milissegundos>);
+}
+
+function zerar() {
+    clearInterval(intervaloId);
+    intervaloId = null;
+}
