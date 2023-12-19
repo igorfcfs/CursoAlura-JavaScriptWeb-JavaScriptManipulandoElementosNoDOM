@@ -1,0 +1,7 @@
+metodo textContent, ideal apenas para inserir textos, se quiser inserir textos com tags html use o metodo innerHTML.
+
+
+Objeto Date:
+let tempoDecorridoEmSegundos = 1500;
+const tempo = new Date(tempoDecorridoEmSegundos * 1000); //multiplica por mil pois date trabalha com milissegundos
+const tempoFormatado = tempo.toLocaleTimeString('pt-br', {minute: '2-digit', second: '2-digit'});
